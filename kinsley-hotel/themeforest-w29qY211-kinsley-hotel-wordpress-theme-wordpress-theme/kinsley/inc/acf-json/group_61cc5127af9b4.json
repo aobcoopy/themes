@@ -1,0 +1,50 @@
+{
+    "key": "group_61cc5127af9b4",
+    "title": "Header & Footer Fields",
+    "fields": [
+        {
+            "key": "field_61cc5132f2309",
+            "label": "Template Type",
+            "name": "type",
+            "type": "select",
+            "instructions": "Select what global styles you need to add for elementor builder template.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "header": "Header",
+                "footer": "Footer"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "hf_templates"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1640781319
+}

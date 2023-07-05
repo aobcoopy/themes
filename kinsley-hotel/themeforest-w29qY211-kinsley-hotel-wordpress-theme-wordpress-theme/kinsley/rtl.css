@@ -1,0 +1,1361 @@
+/*--------------------------------------------
+
+1. RTL Support
+      - Basic
+
+--------------------------------------------*/
+
+/***************************
+
+- Basic
+
+***************************/
+
+/***************************
+
+typography
+
+***************************/
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+.knsl-left,
+input,
+textarea {
+  text-align: right;
+}
+
+.knsl-right {
+  text-align: left;
+}
+
+/***************************
+
+quote
+
+***************************/
+
+blockquote:before {
+  left: auto;
+  right: 15px;
+}
+blockquote:after {
+  right: auto;
+  left: 30px;
+}
+
+/***************************
+
+badge
+
+***************************/
+.knsl-badge {
+  right: auto;
+  left: 15px;
+}
+
+/***************************
+
+button
+
+***************************/
+.knsl-btn .img-svg,
+.knsl-btn:focus .img-svg,
+.knsl-btn i {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.knsl-btn.knsl-btn-icon-only img,
+.knsl-btn:focus.knsl-btn-icon-only img {
+  margin-left: 0;
+}
+.knsl-btn-group a {
+  margin-right: 0;
+  margin-left: 30px;
+}
+.knsl-btn-group a:last-child {
+  margin-left: 0;
+}
+
+/***************************
+
+link
+
+***************************/
+.knsl-link {
+  padding-right: 0;
+  padding-left: 20px;
+}
+.knsl-link:after {
+  right: auto;
+  left: 0;
+}
+.knsl-link:hover:after {
+  -webkit-transform: translateX(-5px);
+  transform: translateX(-5px);
+}
+.knsl-navigation a.knsl-left-link {
+  padding-left: 0;
+  padding-right: 20px;
+}
+.knsl-navigation a.knsl-right-link {
+  padding-right: 0;
+  padding-left: 20px;
+}
+.knsl-navigation a.knsl-left-link:after,
+.knsl-navigation a.knsl-right-link:after {
+  right: auto;
+  left: 0;
+  transform: scaleX(-1);
+}
+.knsl-navigation a.knsl-left-link:hover:after,
+.knsl-navigation a.knsl-right-link:hover:after {
+  -webkit-transform: translateX(-5px) scaleX(-1);
+  transform: translateX(-5px) scaleX(-1);
+}
+.knsl-navigation a.knsl-left-link:after {
+  left: auto;
+  right: 0;
+  transform: scaleX(1);
+}
+.knsl-navigation a.knsl-left-link:hover:after {
+  -webkit-transform: translateX(5px) scaleX(1);
+  transform: translateX(5px) scaleX(1);
+}
+
+/***************************
+
+universal slider
+
+***************************/
+.knsl-uni-slider-nav-panel .knsl-uni-nav {
+  float: left;
+}
+
+/***************************
+
+grid
+
+***************************/
+.knsl-masonry-grid-item {
+  float: right;
+}
+
+/***************************
+
+section transitions
+
+***************************/
+.knsl-transition-top:before {
+  left: auto;
+  right: 0;
+}
+.knsl-transition-top:after {
+  left: auto;
+  right: 0;
+}
+.knsl-transition-bottom:after {
+  left: auto;
+  right: 0;
+}
+.knsl-transition-bottom:before {
+  left: auto;
+  right: 0;
+}
+.knsl-deco-left {
+  left: auto;
+  right: -30%;
+}
+.knsl-deco-right {
+  right: auto;
+  left: -30%;
+}
+
+/***************************
+
+menu
+
+***************************/
+.knsl-menu {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.knsl-menu nav ul li:after {
+  left: auto;
+  right: 10px;
+}
+.knsl-menu nav ul li ul {
+  left: auto;
+  right: -10px;
+}
+.knsl-menu nav ul li ul:before {
+  left: auto;
+  right: 0;
+}
+@media (min-width: 993px) {
+  .knsl-menu nav ul ul ul {
+    left: auto;
+    right: 100%;
+  }
+  .knsl-menu nav ul li.menu-item-has-children li.menu-item-has-children > i {
+    right: auto;
+    left: 2px;
+  }
+}
+@media (max-width: 992px) {
+  .knsl-menu nav ul li ul {
+    left: auto;
+    right: 0;
+  }
+  .knsl-menu nav ul li.menu-item-has-children > i {
+    right: auto;
+    left: 20px;
+  }
+}
+
+/***************************
+
+popup
+
+***************************/
+.knsl-popup-frame .knsl-book-popup .knsl-close-popup {
+  right: auto;
+  left: 20px;
+}
+
+/***************************
+
+banner
+
+***************************/
+.knsl-banner .knsl-banner-content .knsl-main-title .knsl-stars.knsl-stars-left {
+  margin-right: 0;
+}
+.knsl-banner .knsl-banner-content .knsl-scroll-hint-frame .knsl-scroll-hint:before {
+  left: auto;
+  right: 8px;
+}
+
+/***************************
+
+icon box
+
+***************************/
+.knsl-features-card:before {
+  left: auto;
+  right: -500px;
+}
+.knsl-features-card:after {
+  right: auto;
+  left: -500px;
+}
+
+/***************************
+
+quote
+
+***************************/
+.knsl-quote-with-author .knsl-photo-frame {
+  padding-left: 0;
+  padding-right: 10%;
+}
+.knsl-quote-with-author .knsl-photo-frame:before {
+  left: auto;
+  right: -500px;
+}
+.knsl-quote-with-author .knsl-photo-frame:after {
+  right: auto;
+  left: -150%;
+}
+.knsl-quote-with-author blockquote {
+  text-align: right;
+}
+.knsl-quote-with-author .knsl-quote-bottom .knsl-signature {
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+@media (max-width: 992px) {
+  .knsl-quote-with-author .knsl-quote-bottom {
+    padding-left: 30px;
+    padding-right: 100px;
+  }
+  .knsl-quote-with-author .knsl-quote-bottom:before {
+    left: auto;
+    right: 30px;
+  }
+  .knsl-quote-with-author .knsl-quote-bottom .knsl-signature {
+    margin-left: 0;
+  }
+}
+
+/***************************
+
+gallery
+
+***************************/
+.knsl-slider-nav-panel .knsl-about-slider-1-pagination {
+  left: auto;
+  right: 0;
+}
+.knsl-slider-nav-panel .knsl-about-slider-nav {
+  right: auto;
+  left: 0;
+}
+.knsl-image-frame img {
+  left: auto;
+  right: 0;
+}
+.knsl-image-frame .knsl-zoom {
+  left: auto;
+  right: 50%;
+  margin-right: -20px;
+  margin-left: 0;
+}
+.knsl-gallery-item .knsl-zoom {
+  left: auto;
+  right: 50%;
+  margin-left: 0;
+  margin-right: -20px;
+}
+
+/***************************
+
+video
+
+***************************/
+.knsl-video-frame .knsl-play-btn {
+  padding-left: 0;
+  padding-right: 4px;
+  left: auto;
+  right: 50%;
+  margin-left: 0;
+  margin-right: -30px;
+}
+
+/***************************
+
+cards
+
+***************************/
+
+.knsl-blog-card .knsl-description-frame .knsl-room-features .knsl-feature,
+.knsl-menu-card .knsl-description-frame .knsl-room-features .knsl-feature,
+.knsl-room-card .knsl-description-frame .knsl-room-features .knsl-feature {
+  margin-right: 0;
+  margin-left: 15px;
+}
+.knsl-blog-card .knsl-description-frame .knsl-room-features .knsl-feature .knsl-icon-frame,
+.knsl-menu-card .knsl-description-frame .knsl-room-features .knsl-feature .knsl-icon-frame,
+.knsl-room-card .knsl-description-frame .knsl-room-features .knsl-feature .knsl-icon-frame {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/***************************
+
+testimonials
+
+***************************/
+.knsl-testimonial-card .knsl-name-and-text blockquote .knsl-stars li {
+  margin-right: 0;
+  margin-left: 2px;
+}
+
+/***************************
+
+team
+
+***************************/
+.knsl-team-card .knsl-team-member-descr .knsl-member-social li {
+  margin-right: 0;
+  margin-left: 5px;
+}
+.knsl-team-card .knsl-team-member-descr .knsl-member-social li:last-child {
+  margin-left: 0;
+}
+
+/***************************
+
+faq
+
+***************************/
+.knsl-faq .card .card-header .knsl-faq-title .badge {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.knsl-faq .card .card-header:hover {
+  padding-left: 0;
+  padding-right: 5px;
+}
+.knsl-faq .card .knsl-card-body {
+  padding-left: 30px;
+  padding-right: 35px;
+}
+
+/***************************
+
+side menu
+
+***************************/
+.knsl-side-menu {
+  padding-right: 0;
+  padding-left: 30px;
+}
+.knsl-side-menu .knsl-sm-link {
+  padding-left: 0;
+  padding-right: 30px;
+}
+.knsl-side-menu .knsl-sm-link:before {
+  left: auto;
+  right: 0;
+}
+
+/***************************
+
+pagination
+
+***************************/
+.knsl-pagination li,
+.knsl-pagination a,
+.knsl-pagination span,
+.page-links a,
+.page-links span {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.knsl-pagination li:last-child,
+.knsl-pagination a:last-child,
+.knsl-pagination span:last-child,
+.page-links a:last-child,
+.page-links span:last-child {
+  margin-left: 0;
+}
+
+/***************************
+
+breadcrumbs
+
+***************************/
+.knsl-breadcrumbs li {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.knsl-breadcrumbs li:last-child {
+  margin-left: 0;
+}
+.knsl-breadcrumbs li a:after {
+  margin-left: 0;
+  margin-right: 10px;
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+/***************************
+
+room details slider
+
+***************************/
+.knsl-room-detail-photo-lg .knsl-zoom,
+.knsl-room-detail-photo-sm .knsl-zoom {
+  left: auto;
+  right: 50%;
+  margin-left: 0;
+  margin-right: -20px;
+}
+.swiper-slide-thumb-active .knsl-room-detail-photo-sm img {
+  left: auto;
+  right: 5px;
+}
+
+/***************************
+
+detail features
+
+***************************/
+.knsl-room-features-lg .knsl-feature {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.knsl-room-features-lg .knsl-feature:last-child {
+  margin-left: 0;
+}
+.knsl-room-features-lg .knsl-feature .knsl-icon-frame {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.knsl-room-features-lg .mphb-single-room-type-attributes li {
+  padding-left: 0;
+  padding-right: 55px;
+}
+.knsl-room-features-lg .mphb-single-room-type-attributes li:before {
+  left: auto;
+  right: 12.5px;
+}
+
+/***************************
+
+map
+
+***************************/
+.knsl-map-frame .knsl-lock {
+  right: auto;
+  left: 20px;
+}
+
+/***************************
+
+reviews
+
+***************************/
+.knsl-review-card {
+  text-align: right;
+}
+.knsl-review-card blockquote {
+  text-align: right;
+}
+.knsl-review-card .knsl-card-header .knsl-stars li {
+  margin-right: 0;
+  margin-left: 2px;
+}
+.knsl-review-card .knsl-card-header .knsl-name-and-photo .knsl-avatar-frame {
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+/***************************
+
+footer
+
+***************************/
+.footer .knsl-footer .knsl-footer-social a,
+.hf-type-footer .knsl-footer-social a {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.footer .knsl-footer .knsl-footer-social a:last-child,
+.hf-type-footer .knsl-footer-social a:last-child {
+  margin-left: 0;
+}
+.footer .knsl-footer .footer-insta,
+.hf-type-footer .footer-insta {
+  float: right;
+}
+.footer .knsl-footer .footer-insta a,
+.hf-type-footer .footer-insta a {
+  margin-right: 0;
+  margin-left: 15px;
+}
+.footer .knsl-footer .footer-insta a:nth-child(3n),
+.hf-type-footer .footer-insta a:nth-child(3n) {
+  margin-left: 0;
+}
+
+/***************************
+
+forms
+
+***************************/
+.knsl-book-form.knsl-book-form-2 .mphb_sc_search-form > p.mphb_sc_search-submit-button-wrapper button {
+  float: left;
+}
+.knsl-book-form.knsl-book-form-v .mphb_sc_search-form > p.mphb_sc_search-submit-button-wrapper button::before {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.knsl-book-form .mphb_sc_search-form > p.mphb_sc_search-check-in-date:before,
+.knsl-book-form .mphb_sc_search-form > p.mphb_sc_search-check-out-date:before,
+.knsl-book-form .mphb-booking-form > p.mphb-check-in-date-wrapper:before,
+.knsl-book-form .mphb-booking-form > p.mphb-check-out-date-wrapper:before {
+  right: auto;
+  left: 30px;
+}
+.knsl-book-form .knsl-input-frame:before {
+  right: auto;
+  left: 20px;
+}
+.knsl-book-form.knsl-book-form-2 {
+  padding-left: 10px;
+  padding-right: 30px;
+}
+.knsl-book-form.knsl-book-form-2 form label {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.knsl-book-form.knsl-book-form-2 form button {
+  float: left;
+}
+
+@media (max-width: 1199px) {
+  .knsl-book-form.knsl-book-form-2 input[type="text"] {
+    padding-right: 20px;
+    padding-left: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .knsl-book-form.knsl-book-form-2 .mphb_sc_search-form > p.mphb_sc_search-submit-button-wrapper button::before {
+    right: auto;
+    margin-right: 0;
+    margin-left: 12px;
+  }
+  .knsl-book-form.knsl-book-form-2 form button {
+    float: none;
+  }
+  .knsl-book-form.knsl-book-form-2 form button img {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+}
+
+.nice-select .list .option,
+.select2 .list .option {
+  text-align: right;
+}
+.knsl-form-submit-frame {
+  justify-content: right;
+}
+.knsl-form-submit-frame .knsl-text-sm {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+/***************************
+
+MPHB Rooms
+
+***************************/
+.mphb-room-type .mphb-loop-room-type-attributes li,
+.mphb-single-room-type-attributes li {
+  margin-right: 0;
+  margin-left: 15px;
+  padding-left: 0;
+  padding-right: 40px;
+}
+.mphb-room-type .mphb-loop-room-type-attributes li:after,
+.mphb-single-room-type-attributes li:after {
+  left: auto;
+  right: 0;
+}
+.mphb-room-type .mphb-loop-room-type-attributes li:before,
+.mphb-single-room-type-attributes li:before {
+  left: auto;
+  right: 7.5px;
+}
+.mphb-room-type .mphb-room-type-facilities .mphb-attribute-value,
+.mphb-room-type-facilities .mphb-attribute-value {
+  right: auto;
+  left: -10px;
+}
+.mphb-room-type .mphb-room-type-facilities .mphb-attribute-value:before,
+.mphb-room-type-facilities .mphb-attribute-value:before {
+  right: auto;
+  left: 11px;
+}
+.mphb-room-type .mphb-room-type-categories .mphb-attribute-value a,
+.mphb-room-type-categories .mphb-attribute-value a {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.mphb-room-type .mphb-book-button:before {
+  margin-right: 0;
+  margin-left: 12px;
+}
+.mphb-room-type .mphb-regular-price + p {
+  text-align: left;
+}
+.mphb-room-type .mphb-loop-room-type-attributes + .mphb-to-book-btn-wrapper {
+  text-align: right;
+}
+.attr-price-fullwidth-true .mphb-room-type .mphb-regular-price + p {
+  text-align: right;
+}
+.mphb-room-type .mphb-reserve-room-section .nice-select {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.mphb-room-type .mphb-reserve-room-section .select2 {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.mphb-room-type .mphb-to-book-btn-wrapper {
+  text-align: left;
+}
+
+/***************************
+
+MPHB Search Results
+
+***************************/
+.mphb_sc_search_results-wrapper .mphb-recommendation .mphb-recommendation-total {
+  float: left;
+}
+.mphb_sc_search_results-wrapper .mphb-recommendation .mphb-recommendation-reserve-button {
+  float: left;
+  clear: left;
+}
+.mphb_sc_search_results-wrapper .mphb-reservation-cart .mphb-reservation-details {
+  float: right;
+}
+.mphb-reserve-room-section .mphb-book-button + .mphb-confirm-reservation {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .mphb-room-type .mphb-reserve-room-section .nice-select,
+  .mphb-room-type .mphb-reserve-room-section .select2 {
+    margin-left: 0;
+  }
+  .mphb_sc_search_results-wrapper .mphb-reserve-room-section .mphb-rooms-reservation-message-wrapper .mphb-remove-from-reservation {
+    float: none;
+    margin-left: 0;
+    margin-right: 15px;
+  }
+  .mphb-reserve-room-section .mphb-book-button + .mphb-confirm-reservation {
+    margin-right: 0;
+  }
+  .mphb_sc_search_results-wrapper .mphb-reservation-cart .mphb-reservation-details {
+    float: none;
+  }
+  .mphb_sc_search_results-wrapper .mphb-reservation-cart .mphb-confirm-reservation {
+    float: none;
+  }
+}
+
+/***************************
+
+MPHB Checkout
+
+***************************/
+.mphb-checkout-section .mphb-room-details p.mphb-adults-chooser,
+.mphb-checkout-section .mphb-room-details p.mphb-children-chooser,
+.mphb-checkout-section .mphb-room-details p.mphb-guest-name-wrapper {
+  margin-right: 0;
+  margin-left: 25px;
+}
+.mphb_sc_checkout-form .mphb-errors-wrapper {
+  margin-left: 0;
+  margin-right: 30px;
+}
+.mphb_sc_checkout-form .mphb_sc_checkout-submit-wrapper {
+  float: left;
+}
+
+/***************************
+
+radio & checkboxes
+
+***************************/
+.mphb-gateways-list .mphb-gateway {
+  padding-left: 0;
+  padding-right: 30px;
+}
+.mphb-gateways-list .mphb-gateway input[type="radio"] + label:before {
+  left: auto;
+  right: 0px;
+}
+.mphb-gateways-list .mphb-gateway input[type="radio"] + label:after {
+  left: auto;
+  right: 4px;
+}
+.mphb-checkbox-label,
+.mphb-terms-and-conditions-accept label {
+  padding-left: 0;
+  padding-right: 30px;
+}
+.mphb-checkbox-label input[type="checkbox"] + span:before,
+.mphb-terms-and-conditions-accept label input[type="checkbox"] + span:before {
+  left: auto;
+  right: 0;
+}
+.mphb-checkbox-label input[type="checkbox"] + span:after,
+.mphb-terms-and-conditions-accept label input[type="checkbox"] + span:after {
+  left: auto;
+  right: 9px;
+  border-right-width: 0;
+  border-left-width: 3px;
+}
+
+@media (max-width: 500px) {
+  .mphb_sc_checkout-form .mphb-errors-wrapper {
+    left: auto;
+    right: 0;
+    margin-right: 0;
+    text-align: right;
+  }
+}
+
+/***************************
+
+MPHB Room Default
+
+***************************/
+.knsl-room-default-post .mphb-booking-form > p.mphb-check-in-date-wrapper:before,
+.knsl-room-default-post .mphb-booking-form > p.mphb-check-out-date-wrapper:before {
+  right: auto;
+  left: 30px;
+}
+.knsl-room-default-post .mphb-single-room-type-attributes li {
+  padding-left: 0;
+  padding-right: 55px;
+  margin-right: 0;
+  margin-left: 20px;
+}
+.knsl-room-default-post .mphb-single-room-type-attributes li:before {
+  left: auto;
+  right: 12.5px;
+}
+
+/***************************
+
+Custom WP Styles
+
+***************************/
+
+/*-forms*/
+.wpcf7-not-valid-tip {
+	text-align: right;
+}
+
+/*single*/
+.post-text-bottom .tags-links a,
+.post-text-bottom .tags-links span,
+.content-sidebar .tagcloud a,
+.wp-block-tag-cloud .tag-cloud-link {
+  margin-right: 0;
+  margin-left: 7px;
+}
+.post-text-bottom .tags-links *:nth-child(1) {
+  margin-left: 7px;
+}
+.post-text-bottom .tags-links *:last-child {
+  margin-left: 0;
+}
+.post-text-bottom .social-share a:last-child {
+  margin-left: 0;
+}
+
+/*comments*/
+.knsl-comments-list .comment-reply-link:after {
+  margin-left: 0;
+  margin-right: 8px;
+}
+.knsl-comments-list .children {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+.comment-reply-title h3 a {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/*typography*/
+.single-post-text dd {
+	margin-left: 0;
+  margin-right: 20px;
+}
+.single-post-text .align-right {
+	text-align: left !important;
+}
+.single-post-text .align-left {
+	text-align: right !important;
+}
+.single-post-text .pull-right {
+	float: left !important;
+}
+.single-post-text .pull-left {
+	float: right !important;
+}
+.single-post-text .pull-none {
+	float: none !important;
+}
+.single-post-text .alignright {
+  margin-left: 0 !important;
+  margin-right: 20px !important;
+	float: left !important;
+}
+.single-post-text .alignleft {
+	margin-left: 20px !important;
+  margin-right: 0 !important;
+	float: right !important;
+}
+.single-post-text .centrize {
+	left: auto;
+  right: 0;
+}
+.single-post-text form.post-password-form label input {
+  border-right: none;
+}
+.single-post-text > ul,
+.single-post-text > ol,
+.single-post-text > ul ul,
+.single-post-text > ol ol,
+.single-post-text > ul ol,
+.single-post-text > ol ul{
+  padding-left: 0;
+  padding-right: 1.75rem;
+}
+
+/*-sidebar & wp elements*/
+.col__sedebar {
+  padding-left: 0;
+  padding-right: 50px;
+}
+.wp-block-table table td, .single-post-text table td, .single-post-text table th {
+  text-align: right;
+}
+.content-sidebar .search-form .btn_search,
+.search-submit,
+.wp-block-search__button {
+	right: auto;
+  left: 15px;
+}
+.content-sidebar ul {
+  padding-right: 0;
+}
+.content-sidebar ul ul {
+  margin-right: 0;
+}
+.wp-block-categories-list li ul,
+.wp-block-archives-list li ul {
+  margin-right: 0;
+}
+.wp-block-categories-list li,
+.wp-block-archives-list li,
+.widget.widget_nav_menu ul li,
+.widget.widget_pages ul li,
+.widget_categories ul li {
+	padding-left: 0;
+  padding-right: 9px;
+}
+.content-sidebar .widget>ul>li {
+  padding-right: 0;
+}
+.wp-block-categories-list li ul li:before,
+.wp-block-archives-list li ul li:before,
+.widget.widget_nav_menu ul li ul li:before,
+.widget.widget_pages ul li ul li:before,
+.widget_categories ul li ul li:before {
+	left: auto;
+  right: 0;
+}
+a.rsswidget {
+	margin-right: 0;
+  margin-left: 3px;
+}
+.sticky:before {
+	left: auto;
+  right: -5px;
+}
+.wp-block-pullquote blockquote {
+	border-right: none;
+}
+.page-links .post-page-numbers {
+	margin-right: 10px;
+	margin-left: 0;
+}
+.wp-calendar-nav span.wp-calendar-nav-prev {
+	float: right;
+}
+.wp-calendar-nav span.wp-calendar-nav-next {
+	float: left;
+}
+.wp-block-latest-comments__comment {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.wp-block-latest-posts.wp-block-latest-posts__list li {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.post-password-form input[type="submit"] {
+  margin-left: 0;
+  margin-right: 12px;
+}
+.wp-block-latest-posts.wp-block-latest-posts__list {
+  padding-right: 0;
+}
+
+@media (max-width: 992px) {
+	.sticky:before {
+		left: auto;
+    right: 0;
+	}
+}
+@media (max-width: 720px) {
+	.content-sidebar {
+		float: none;
+	}
+	.post-password-form input[type="submit"] {
+    margin-right: 0;
+	}
+	.col__sedebar {
+    padding-right: 0;
+	}
+}
+
+/***************************
+
+WooCommerce
+
+***************************/
+
+/*-------------------------
+header cart button
+--------------------------*/
+.knsl-cart {
+	margin-left: 0;
+  margin-right: 20px;
+}
+.knsl-cart .knsl-cart-number {
+	right: auto;
+  left: -10px;
+}
+
+@media (max-width: 992px) {
+  .knsl-cart {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
+
+/*-------------------------
+minicart
+--------------------------*/
+.knsl-minicart-window {
+	right: auto;
+  left: 0;
+}
+.knsl-minicart-window .woocommerce-mini-cart .woocommerce-mini-cart-item {
+  padding-left: 40px;
+  padding-right: 100px;
+}
+.knsl-minicart-window .woocommerce-mini-cart .woocommerce-mini-cart-item .remove_from_cart_button {
+  padding-right: 0;
+  right: auto;
+  left: 10px;
+}
+.knsl-minicart-window .woocommerce-mini-cart .woocommerce-mini-cart-item .attachment-woocommerce_thumbnail {
+  left: auto;
+  right: 0;
+  margin-right: 0;
+}
+.knsl-minicart-window .woocommerce-mini-cart__buttons a:last-child {
+	margin-right: 15px;
+  margin-left: 0;
+}
+
+@media (max-width: 500px) {
+	.knsl-minicart-window {
+		right: auto;
+    left: -15px;
+	}
+}
+
+/*-------------------------
+buttons & typography
+--------------------------*/
+.woocommerce #respond input#submit.added:after,
+.woocommerce a.button.added:after,
+.woocommerce button.button.added:after,
+.woocommerce input.button.added:after {
+  right: auto;
+  left: 15px;
+}
+.woocommerce #respond input#submit.loading:after,
+.woocommerce a.button.loading:after,
+.woocommerce button.button.loading:after,
+.woocommerce input.button.loading:after {
+  right: auto;
+  left: 15px;
+}
+
+/*-------------------------
+product card
+--------------------------*/
+.woocommerce ul.products li.product .price {
+  float: right;
+}
+.woocommerce ul.products li.product .button {
+  margin-right: 0;
+  float: left;
+}
+.woocommerce ul.products li.product a.added_to_cart {
+  right: auto;
+  left: 0;
+}
+.woocommerce ul.products li.product .star-rating {
+  left: auto;
+  right: 20px;
+}
+.woocommerce .col-lg-9 ul.products li.product .button {
+  float: none;
+  margin-left: 0;
+  margin-right: 20px;
+}
+.woocommerce .col-lg-9 ul.products li.product .price {
+  float: none;
+}
+
+@media (max-width: 767px) {
+  .woocommerce ul.products[class*=columns-] li.product,
+  .woocommerce-page ul.products[class*=columns-] li.product {
+    float: none;
+  }
+  .woocommerce .woocommerce-ordering,
+  .woocommerce-page .woocommerce-ordering {
+    float: none;
+  }
+}
+
+/*-------------------------
+product single
+--------------------------*/
+.product_meta .tagged_as a {
+  margin-right: 0;
+  margin-left: 7px;
+}
+.product_meta .tagged_as a:nth-child(1) {
+  margin-right: 0;
+}
+.woocommerce .product .quantity .qty {
+  margin-right: 0;
+  margin-left: 20px;
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+  margin-left: 0;
+  margin-right: 70px;
+}
+
+@media (max-width: 767px) {
+  .woocommerce #reviews #comments ol.commentlist {
+    padding-right: 0;
+  }
+  .woocommerce #reviews #comments ol.commentlist li .comment-text {
+    margin-left: 0;
+    margin-right: 32px;
+  }
+  .woocommerce .star-rating {
+    float: none;
+  }
+}
+
+/*-------------------------
+cart
+--------------------------*/
+#add_payment_method table.cart td.actions .coupon .input-text,
+.woocommerce-cart table.cart td.actions .coupon .input-text,
+.woocommerce-checkout table.cart td.actions .coupon .input-text {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  #add_payment_method table.cart td.actions .coupon .input-text,
+  .woocommerce-cart table.cart td.actions .coupon .input-text,
+  .woocommerce-checkout table.cart td.actions .coupon .input-text {
+    margin-left: 0;
+    float: none;
+  }
+  .woocommerce #content table.cart td.actions .coupon .button.alt,
+  .woocommerce #content table.cart td.actions .coupon .input-text+.button,
+  .woocommerce table.cart td.actions .coupon .button.alt,
+  .woocommerce table.cart td.actions .coupon .input-text+.button,
+  .woocommerce-page #content table.cart td.actions .coupon .button.alt,
+  .woocommerce-page #content table.cart td.actions .coupon .input-text+.button,
+  .woocommerce-page table.cart td.actions .coupon .button.alt,
+  .woocommerce-page table.cart td.actions .coupon .input-text+.button {
+    float: none;
+  }
+}
+
+/*-------------------------
+checkout
+--------------------------*/
+.woocommerce .checkout .col2-set,
+.woocommerce-page .checkout .col2-set {
+  float: right;
+}
+.woocommerce .checkout #order_review_heading,
+.woocommerce-page .checkout #order_review_heading,
+.woocommerce .checkout #order_review,
+.woocommerce-page .checkout #order_review {
+  float: left;
+}
+.woocommerce ul.order_details li {
+  float: none;
+  margin-left: 0;
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+@media (max-width: 767px) {
+  .woocommerce .checkout .col2-set,
+  .woocommerce-page .checkout .col2-set {
+    float: none;
+  }
+  .woocommerce .checkout #order_review_heading,
+  .woocommerce-page .checkout #order_review_heading,
+  .woocommerce .checkout #order_review,
+  .woocommerce-page .checkout #order_review {
+    float: none;
+  }
+  .woocommerce form .form-row-first,
+  .woocommerce form .form-row-last,
+  .woocommerce-page form .form-row-first,
+  .woocommerce-page form .form-row-last {
+    float: none;
+  }
+}
+
+/*-------------------------
+account
+--------------------------*/
+.woocommerce div.product .woocommerce-tabs ul.tabs::before,
+.woocommerce-MyAccount-navigation ul::before {
+	left: auto;
+  right: 0;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li:first-child a,
+.woocommerce-MyAccount-navigation li.woocommerce-MyAccount-navigation-link:first-child a {
+	margin-right: 0;
+}
+.woocommerce-account .addresses .title h3 {
+	float: right;
+}
+.woocommerce-account .addresses .title .edit {
+	float: left;
+}
+
+/*-------------------------
+sidebar & widgets
+--------------------------*/
+.woocommerce .widget_shopping_cart .cart_list li a.remove,
+.woocommerce.widget_shopping_cart .cart_list li a.remove {
+  left: auto;
+  right: 0;
+  padding-right: 0;
+}
+.woocommerce .widget_price_filter .price_slider_amount .price_label {
+  left: auto;
+  right: 0;
+}
+.woocommerce .widget_product_search button {
+  right: auto;
+  left: 15px;
+}
+
+/*-------------------------
+elementor
+--------------------------*/
+.elementor-275 .elementor-element.elementor-element-6fc63e6,
+.elementor-831 .elementor-element.elementor-element-72e37b0,
+.elementor-831 .elementor-element.elementor-element-1ce252a,
+.elementor-831 .elementor-element.elementor-element-df594a6,
+.elementor-831 .elementor-element.elementor-element-513816c,
+.elementor-831 .elementor-element.elementor-element-a8aebc6,
+.elementor-2320 .elementor-element.elementor-element-480059c {
+  text-align: right !important;
+}
+.elementor-275 .elementor-element.elementor-element-374bc3e,
+.elementor-831 .elementor-element.elementor-element-8517c6f {
+  text-align: left !important;
+}
+.elementor-831 .elementor-element.elementor-element-eb2f1d2 > .elementor-widget-container {
+  padding-right: 0 !important;
+  padding-left: 20% !important;
+}
+
+/*-------------------------
+fontawesome
+--------------------------*/
+.fa-arrow-left, .fa-arrow-right {
+  transform: scaleX(-1);
+}
+
+
+
+/*
+- minimal layout
+*/
+
+.knsl-app.knsl-app-minimal .knsl-top-bar .elementor-widget-kinsley-header-buttons .elementor-widget-container {
+  text-align: left;
+}
+
+.knsl-app.knsl-app-minimal .knsl-top-bar .elementor-widget-kinsley-header-buttons .knsl-cart {
+  margin-left: 70px;
+  margin-right: 0;
+  text-align: left;
+}
+
+.knsl-app.knsl-app-minimal .knsl-top-bar .knsl-minicart {
+  text-align: right;
+}
+
+.knsl-app.knsl-app-minimal .knsl-top-bar .elementor-widget-kinsley-header-buttons .elementor-widget-container {
+    justify-content: left;
+}
+
+.knsl-app.knsl-app-minimal .knsl-top-bar .knsl-menu nav ul li.current-item:after,
+.knsl-app.knsl-app-minimal .knsl-top-bar .knsl-menu nav ul li.current-menu-item:after {
+  left: auto;
+  right: 0;
+}
+
+.knsl-app.knsl-app-minimal .mphb-room-type .mphb-loop-room-type-attributes,
+.knsl-app.knsl-app-minimal .mphb-single-room-type-attributes {
+  margin-left: 0;
+  margin-right: -30px;
+  padding-right: 25px;
+}
+
+@media (min-width: 992px) {
+  .knsl-app.knsl-app-minimal .knsl-book-form.knsl-book-form-2 {
+    padding-right: 30px;
+    padding-left: 170px;
+    left: auto;
+    right: 0;
+  }
+
+  .knsl-app.knsl-app-minimal .knsl-book-form.knsl-book-form-2 .mphb_sc_search-form > p.mphb_sc_search-submit-button-wrapper {
+    right: auto;
+    left: 0;
+  }
+
+  .knsl-app.knsl-app-minimal .knsl-book-form.knsl-book-form-2 .mphb_sc_search-form > p.mphb_sc_search-submit-button-wrapper button {
+    right: auto;
+    left: 1px;
+  }
+
+  .knsl-center.knsl-title-frame.knsl-title-left {
+    text-align: right;
+  }
+
+  .knsl-title-frame.knsl-center.knsl-title-left .knsl-text {
+    margin-right: 0;
+  }
+
+  .knsl-title-frame.knsl-center.knsl-title-left .knsl-btn {
+    right: auto;
+    left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .knsl-app.knsl-app-minimal .knsl-top-bar .elementor-widget-kinsley-header-buttons .elementor-widget-container {
+    flex-direction: row;
+  }
+
+  .knsl-app.knsl-app-minimal .knsl-top-bar .elementor-widget-kinsley-header-buttons .knsl-cart {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+}
+
+/*Fix Datepick Calendar width Issue*/
+.datepick-rtl {
+  width: auto !important;
+}

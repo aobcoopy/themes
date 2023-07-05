@@ -1,0 +1,653 @@
+{
+    "key": "group_642effbea39cd",
+    "title": "Modals Options",
+    "fields": [
+        {
+            "key": "field_61c4f7177f56a",
+            "label": "Booking Modals",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_61c512f3f2f4d",
+            "label": "Enable",
+            "name": "rooms_popup_enable",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_61c51318f2f4e",
+            "label": "Parameters",
+            "name": "rooms_popup_args",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61c512f3f2f4d",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_61c5136bf2f4f",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_61c51377f2f50",
+                    "label": "ID",
+                    "name": "id",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Use this id for open popup in URL\/Link field. For example: #booknow",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "booknow",
+                    "placeholder": "",
+                    "prepend": "#",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_642af7d8dec32",
+                    "label": "Form Type",
+                    "name": "type",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "search": "Search Available Rooms",
+                        "booking": "Booking Current or Custom (by ID) Room"
+                    },
+                    "default_value": "search",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_61c513b3f2f51",
+                    "label": "Adults",
+                    "name": "adults",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "The number of adults presetted in the search form.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_642af7d8dec32",
+                                "operator": "==",
+                                "value": "search"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 1,
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_61c513c4f2f52",
+                    "label": "Children",
+                    "name": "children",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "The number of children presetted in the search form.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_642af7d8dec32",
+                                "operator": "==",
+                                "value": "search"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 0,
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_61c513f8f2f53",
+                    "label": "Check-in date",
+                    "name": "check_in_date",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Check-in date presetted in the search form.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_642af7d8dec32",
+                                "operator": "==",
+                                "value": "search"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "d\/m\/Y",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_61c5142bf2f54",
+                    "label": "Check-out date",
+                    "name": "check_out_date",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Check-out date presetted in the search form.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_642af7d8dec32",
+                                "operator": "==",
+                                "value": "search"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "d\/m\/Y",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_61c51452f2f55",
+                    "label": "Attributes",
+                    "name": "attributes",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Custom attributes for advanced search.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_642af7d8dec32",
+                                "operator": "==",
+                                "value": "search"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Slugs of attributes",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_61c514bdf2f56",
+                    "label": "Class",
+                    "name": "class",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Custom CSS class for shortcode wrapper.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_642af7d8dec32",
+                                "operator": "==",
+                                "value": "search"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_642af96a4695d",
+                    "label": "Accommodation ID",
+                    "name": "booking_id",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Enter ID of accommodation for Booking Form.<br><br> \r\n<small>For find your Accommodation ID, go to Accommodations -> Accommodations Types -> Edit Accommodation and check URL address in your browser: <i>your-website.com\/wp-admin\/post.php?post=<strong>3519<\/strong>&action=edit<\/i> .<br><br> <strong>3519<\/strong> - Accommodation ID<\/small>",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_642af7d8dec32",
+                                "operator": "==",
+                                "value": "booking"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_642afb214695e",
+                    "label": "Use Current Accommodation ID",
+                    "name": "booking_current",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "This option work only on Single Accommodation Page.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_642af7d8dec32",
+                                "operator": "==",
+                                "value": "booking"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1
+                }
+            ]
+        },
+        {
+            "key": "field_642f014e0e96a",
+            "label": "Custom Modals",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_642f019b0e978",
+            "label": "Modals Builder",
+            "name": "modals_builder",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_642f01550e96b",
+                    "label": "Enable",
+                    "name": "popup_enable",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ui": 1,
+                    "parent_repeater": "field_642f019b0e978"
+                },
+                {
+                    "key": "field_642f01590e96c",
+                    "label": "Parameters",
+                    "name": "popup_args",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_642f01550e96b",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "row",
+                    "sub_fields": [
+                        {
+                            "key": "field_642f01590e96d",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_642f01590e96e",
+                            "label": "ID",
+                            "name": "id",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Use this id for open popup in URL\/Link field. For example: #booknow",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "booknow",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "#",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_642f01590e96f",
+                            "label": "Form Type",
+                            "name": "type",
+                            "aria-label": "",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "cf7": "Contact Form 7",
+                                "opentable": "Open Table Reservation",
+                                "custom": "Custom Content"
+                            },
+                            "default_value": "cf7",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "layout": "horizontal"
+                        },
+                        {
+                            "key": "field_642f01590e970",
+                            "label": "CF7 Form",
+                            "name": "cf7_form",
+                            "aria-label": "",
+                            "type": "cf7",
+                            "instructions": "Click \"Update\" button to view all created forms",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_642f01590e96f",
+                                        "operator": "==",
+                                        "value": "cf7"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "disable": ""
+                        },
+                        {
+                            "key": "field_642f01590e971",
+                            "label": "OpenTable ID",
+                            "name": "opentable_id",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Restaurant ID (RID)",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_642f01590e96f",
+                                        "operator": "==",
+                                        "value": "opentable"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_642f01590e972",
+                            "label": "OpenTable Language",
+                            "name": "opentable_lang",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "Select default OpenTable Language",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_642f01590e96f",
+                                        "operator": "==",
+                                        "value": "opentable"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "en-US": "English-US",
+                                "fr-CA": "Français-CA",
+                                "de-DE": "Deutsch-DE",
+                                "es-MX": "Español-MX",
+                                "ja-JP": "日本語-JP",
+                                "nl-NL": "Nederlands-NL",
+                                "it-IT": "Italiano-IT"
+                            },
+                            "default_value": "en-US",
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_642f01590e973",
+                            "label": "Custom Content",
+                            "name": "custom_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "Type here your custom content or shortcode",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_642f01590e96f",
+                                        "operator": "==",
+                                        "value": "custom"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "parent_repeater": "field_642f019b0e978"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "modals-theme-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1680804281
+}

@@ -1,0 +1,297 @@
+<wpml-config>
+    <custom-types>
+      <custom-type translate="1">gallery</custom-type>
+      <custom-type translate="1">restaurant_menu</custom-type>
+      <custom-type translate="1">faq</custom-type>
+      <custom-type translate="1">hf_templates</custom-type>
+    </custom-types>
+    <taxonomies>
+      <taxonomy translate="1">gallery_categories</taxonomy>
+      <taxonomy translate="1">restaurant_menu_categories</taxonomy>
+      <taxonomy translate="1">faq_categories</taxonomy>
+    </taxonomies>
+    <elementor-widgets>
+      <widget name="kinsley-about-gallery">
+        <fields>
+            <field type="Slider Gallery: Title" editor_type="AREA">title</field>
+            <field type="Slider Gallery: Description" editor_type="AREA">description</field>
+            <field type="Slider Gallery: Button" editor_type="LINE">more</field>
+            <field type="Slider Gallery: Link" editor_type="LINK">link</field>
+        </fields>
+        <fields-in-item items_of="items">
+            <field type="Slider Gallery: Item Title" editor_type="AREA">title</field>
+        </fields-in-item>
+      </widget>
+      <widget name="kinsley-about-quote">
+        <fields>
+            <field type="About Quote: Name" editor_type="AREA">name</field>
+            <field type="About Quote: Role" editor_type="AREA">role</field>
+            <field type="About Quote: Quote" editor_type="AREA">quote</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-about-video">
+        <fields>
+            <field type="About Video: Title" editor_type="AREA">title</field>
+            <field type="About Video: Description" editor_type="VISUAL">description</field>
+            <field type="About Video: Button" editor_type="LINE">button</field>
+            <field type="About Video: YT Video ID" editor_type="LINE">video</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-about">
+        <fields-in-item items_of="items">
+            <field type="About: Item Title" editor_type="AREA">title</field>
+            <field type="About: Item Description" editor_type="VISUAL">desc</field>
+            <field type="About: Item Button" editor_type="LINE">more</field>
+            <field type="About: Item Link" editor_type="LINK">link</field>
+        </fields-in-item>
+      </widget>
+      <widget name="kinsley-blog-carousel">
+        <fields>
+            <field type="Blog Carousel: Title" editor_type="AREA">title</field>
+            <field type="Blog Carousel: Description" editor_type="AREA">description</field>
+            <field type="Blog Carousel: Button" editor_type="LINE">more</field>
+            <field type="Blog Carousel: Link" editor_type="LINK">link</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-blog-grid">
+        <fields>
+            <field type="Blog Grid: Title" editor_type="AREA">title</field>
+            <field type="Blog Grid: Description" editor_type="AREA">description</field>
+            <field type="Blog Grid: Button" editor_type="LINE">more</field>
+            <field type="Blog Grid: Link" editor_type="LINK">link</field>
+            <field type="Blog Grid: More Text" editor_type="AREA">more_text</field>
+            <field type="Blog Grid: More Button" editor_type="LINE">more_btn_txt</field>
+            <field type="Blog Grid: More Link" editor_type="LINK">more_btn_link</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-contact-form">
+        <fields>
+            <field type="Contact Form: Title" editor_type="AREA">title</field>
+            <field type="Contact Form: Description" editor_type="AREA">description</field>
+            <field type="Contact Form: Button" editor_type="LINE">more</field>
+            <field type="Contact Form: Link" editor_type="LINK">link</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-contact-info">
+        <fields-in-item items_of="items">
+            <field type="Contact Info: Item Title" editor_type="AREA">title</field>
+            <field type="Contact Info: Item Description" editor_type="AREA">desc</field>
+        </fields-in-item>
+      </widget>
+      <widget name="kinsley-faq-list">
+        <fields>
+            <field type="FAQ List: Title" editor_type="AREA">title</field>
+            <field type="FAQ List: Description" editor_type="AREA">description</field>
+            <field type="FAQ List: Button" editor_type="LINE">more</field>
+            <field type="FAQ List: Link" editor_type="LINK">link</field>
+            <field type="FAQ List: Menu Title" editor_type="AREA">menu_title</field>
+            <field type="FAQ List: Form Title" editor_type="AREA">form_title</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-features-inner">
+        <fields>
+            <field type="Features Inner: Title" editor_type="AREA">title</field>
+            <field type="Features Inner: Description" editor_type="AREA">description</field>
+            <field type="Features Inner: Button" editor_type="LINE">more</field>
+            <field type="Features Inner: Link" editor_type="LINK">link</field>
+        </fields>
+        <fields-in-item items_of="items">
+            <field type="Features Inner: Item Label" editor_type="AREA">label</field>
+        </fields-in-item>
+      </widget>
+      <widget name="kinsley-features">
+        <fields-in-item items_of="items">
+            <field type="Features Main: Item Label" editor_type="AREA">label</field>
+        </fields-in-item>
+      </widget>
+      <widget name="kinsley-footer-gallery">
+        <fields>
+            <field type="Footer Gallery: Title" editor_type="AREA">title</field>
+        </fields>
+        <fields-in-item items_of="items">
+            <field type="Footer Gallery: Item Name" editor_type="LINE">name</field>
+        </fields-in-item>
+      </widget>
+      <widget name="kinsley-footer-menu">
+        <fields>
+            <field type="Footer Menu: Title" editor_type="AREA">title</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-gallery">
+        <fields>
+            <field type="Gallery Grid: Title" editor_type="AREA">title</field>
+            <field type="Gallery Grid: Description" editor_type="AREA">description</field>
+            <field type="Gallery Grid: Button" editor_type="LINE">more</field>
+            <field type="Gallery Grid: Link" editor_type="LINK">link</field>
+            <field type="Gallery Grid: More Text" editor_type="AREA">more_text</field>
+            <field type="Gallery Grid: More Button" editor_type="LINE">more_btn_txt</field>
+            <field type="Gallery Grid: More Link" editor_type="LINK">more_btn_link</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-header-buttons">
+        <fields>
+            <field type="Header Buttons: Button" editor_type="LINE">button</field>
+            <field type="Header Buttons: Link" editor_type="LINK">link</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-hero-banner">
+        <fields>
+            <field type="Hero: Title" editor_type="AREA">title</field>
+            <field type="Hero: Subtitle" editor_type="AREA">subtitle</field>
+            <field type="Hero: Video Button" editor_type="LINE">button_video_text</field>
+            <field type="Hero: YT Video ID" editor_type="LINE">video_id</field>
+            <field type="Hero: Search Button" editor_type="LINE">button_search_popup_text</field>
+            <field type="Hero: Search Title" editor_type="AREA">title_search_popup</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-intro">
+        <fields>
+            <field type="Intro: Title" editor_type="AREA">title</field>
+            <field type="Intro: Description" editor_type="AREA">description</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-map">
+        <fields>
+            <field type="Map: Title" editor_type="AREA">title</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-numbers">
+        <fields-in-item items_of="items">
+            <field type="Numbers: Item Value" editor_type="LINE">value</field>
+            <field type="Numbers: Item Label" editor_type="AREA">label</field>
+        </fields-in-item>
+      </widget>
+      <widget name="kinsley-photo-gallery">
+        <fields>
+            <field type="Photo Gallery: Title" editor_type="AREA">title</field>
+            <field type="Photo Gallery: Description" editor_type="AREA">description</field>
+            <field type="Photo Gallery: Button" editor_type="LINE">more</field>
+            <field type="Photo Gallery: Link" editor_type="LINK">link</field>
+        </fields>
+        <fields-in-item items_of="items">
+            <field type="Photo Gallery: Item Title" editor_type="AREA">title</field>
+        </fields-in-item>
+      </widget>
+      <widget name="kinsley-restaurant-menu-carousel">
+        <fields>
+            <field type="Restaurant Menu Carousel: Title" editor_type="AREA">title</field>
+            <field type="Restaurant Menu Carousel: Description" editor_type="AREA">description</field>
+            <field type="Restaurant Menu Carousel: Button" editor_type="LINE">more</field>
+            <field type="Restaurant Menu Carousel: Link" editor_type="LINK">link</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-restaurant-menu-grid">
+        <fields>
+            <field type="Restaurant Menu Grid: Title" editor_type="AREA">title</field>
+            <field type="Restaurant Menu Grid: Description" editor_type="AREA">description</field>
+            <field type="Restaurant Menu Grid: Button" editor_type="LINE">more</field>
+            <field type="Restaurant Menu Grid: Link" editor_type="LINK">link</field>
+            <field type="Restaurant Menu Grid: More Text" editor_type="AREA">more_text</field>
+            <field type="Restaurant Menu Grid: More Button" editor_type="LINE">more_btn_txt</field>
+            <field type="Restaurant Menu Grid: More Link" editor_type="LINK">more_btn_link</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-restaurant-menu-list">
+        <fields>
+            <field type="Restaurant Menu List: Title" editor_type="AREA">title</field>
+            <field type="Restaurant Menu List: Description" editor_type="AREA">description</field>
+            <field type="Restaurant Menu List: Button" editor_type="LINE">more</field>
+            <field type="Restaurant Menu List: Link" editor_type="LINK">link</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-section-heading">
+        <fields>
+            <field type="Section Heading: Title" editor_type="AREA">title</field>
+            <field type="Section Heading: Description" editor_type="AREA">description</field>
+            <field type="Section Heading: Button" editor_type="LINE">more</field>
+            <field type="Section Heading: Link" editor_type="LINK">link</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-services">
+        <fields>
+            <field type="Services: Title" editor_type="AREA">title</field>
+            <field type="Services: Description" editor_type="AREA">description</field>
+            <field type="Services: Button" editor_type="LINE">more</field>
+            <field type="Services: Link" editor_type="LINK">link</field>
+            <field type="Services: More Text" editor_type="AREA">more_text</field>
+            <field type="Services: More Button" editor_type="LINE">more_btn_txt</field>
+            <field type="Services: More Link" editor_type="LINK">more_btn_link</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-team">
+        <fields>
+            <field type="Team: Title" editor_type="AREA">title</field>
+            <field type="Team: Description" editor_type="AREA">description</field>
+            <field type="Team: Button" editor_type="LINE">more</field>
+            <field type="Team: Link" editor_type="LINK">link</field>
+        </fields>
+        <fields-in-item items_of="items">
+            <field type="Team: Item Name" editor_type="AREA">name</field>
+            <field type="Team: Item Role" editor_type="AREA">role</field>
+            <field type="Team: Item Social 1 Label" editor_type="LINE">social_1_title</field>
+            <field type="Team: Item Social 2 Label" editor_type="LINE">social_2_title</field>
+            <field type="Team: Item Social 3 Label" editor_type="LINE">social_3_title</field>
+            <field type="Team: Item Social 4 Label" editor_type="LINE">social_4_title</field>
+            <field type="Team: Item Social 5 Label" editor_type="LINE">social_5_title</field>
+            <field type="Team: Item Social 6 Label" editor_type="LINE">social_6_title</field>
+        </fields-in-item>
+      </widget>
+      <widget name="kinsley-testimonials">
+        <fields>
+            <field type="Testimonials: Title" editor_type="AREA">title</field>
+            <field type="Testimonials: Description" editor_type="AREA">description</field>
+        </fields>
+        <fields-in-item items_of="items">
+            <field type="Testimonials: Item Title" editor_type="AREA">title</field>
+            <field type="Testimonials: Item Subtitle" editor_type="AREA">subtitle</field>
+            <field type="Testimonials: Item Text" editor_type="VISUAL">text</field>
+        </fields-in-item>
+      </widget>
+      <widget name="kinsley-availability-calendar">
+        <fields>
+            <field type="Availability Calendar: Title" editor_type="AREA">title</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-room-attributes">
+        <fields-in-item items_of="items">
+            <field type="Room Attributes: Item Title" editor_type="LINE">title</field>
+            <field type="Room Attributes: Item Value" editor_type="LINE">value</field>
+        </fields-in-item>
+      </widget>
+      <widget name="kinsley-room-description">
+        <fields>
+            <field type="Room Description: Title" editor_type="AREA">title</field>
+            <field type="Room Description: Description" editor_type="VISUAL">description</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-room-price">
+        <fields>
+            <field type="Room Price: Price After" editor_type="LINE">price_after</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-room-services">
+        <fields>
+            <field type="Room Services: Title" editor_type="AREA">title</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-rooms-grid">
+        <fields>
+            <field type="Rooms Grid: Title" editor_type="AREA">title</field>
+            <field type="Rooms Grid: Description" editor_type="AREA">description</field>
+            <field type="Rooms Grid: Button" editor_type="LINE">more</field>
+            <field type="Rooms Grid: Link" editor_type="LINK">link</field>
+            <field type="Rooms Grid: More Text" editor_type="AREA">more_text</field>
+            <field type="Rooms Grid: More Button" editor_type="LINE">more_btn_txt</field>
+            <field type="Rooms Grid: More Link" editor_type="LINK">more_btn_link</field>
+        </fields>
+      </widget>
+      <widget name="kinsley-rooms-carousel">
+        <fields>
+            <field type="Rooms Carousel: Title" editor_type="AREA">title</field>
+            <field type="Rooms Carousel: Description" editor_type="AREA">description</field>
+            <field type="Rooms Carousel: Button" editor_type="LINE">more</field>
+            <field type="Rooms Carousel: Link" editor_type="LINK">link</field>
+        </fields>
+      </widget>
+    </elementor-widgets>
+</wpml-config>
